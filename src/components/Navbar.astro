@@ -1,0 +1,58 @@
+---
+// Navbar component
+---
+
+<nav class="flex items-center justify-between px-6 py-4 bg-white">
+  <!-- Logo -->
+  <a href="/" class="flex items-center gap-2">
+    <img src="/logo.svg" alt="Taling logo" class="h-9 w-auto" />
+  </a>
+
+  <!-- Nav links -->
+  <ul class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
+    <li>
+      <a href="#" class="text-brand-crimson border-b-2 border-brand-crimson pb-0.5">Home</a>
+    </li>
+    <li><a href="#" class="hover:text-gray-900 transition-colors">Services</a></li>
+    <li><a href="#" class="hover:text-gray-900 transition-colors">About</a></li>
+    <li><a href="#" class="hover:text-gray-900 transition-colors">Reviews</a></li>
+    <li><a href="#" class="hover:text-gray-900 transition-colors">Contact</a></li>
+  </ul>
+
+  <!-- CTA -->
+  <a
+    href="#"
+    class="hidden md:inline-flex items-center gap-2 bg-brand-purple text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-purple-800 transition-colors"
+  >
+    Start a Project
+  </a>
+
+  <!-- Mobile hamburger -->
+  <button
+    id="menu-toggle"
+    class="md:hidden p-2 rounded-lg text-gray-600 hover:bg-gray-100"
+    aria-label="Open menu"
+  >
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+    </svg>
+  </button>
+</nav>
+
+<!-- Mobile menu -->
+<div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-6 py-4 flex flex-col gap-4 text-sm font-medium text-gray-600">
+  <a href="#" class="text-brand-crimson font-semibold">Home</a>
+  <a href="#">Services</a>
+  <a href="#">About</a>
+  <a href="#">Reviews</a>
+  <a href="#">Contact</a>
+  <a href="#" class="mt-2 inline-flex justify-center bg-brand-purple text-white font-semibold px-5 py-2.5 rounded-full">
+    Start a Project
+  </a>
+</div>
+
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+  toggle?.addEventListener('click', () => menu?.classList.toggle('hidden'));
+</script>

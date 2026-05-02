@@ -1,0 +1,79 @@
+---
+// Hero Bento Grid - left big card + right two stacked cards
+---
+
+<section class="grid grid-cols-1 md:grid-cols-[1.8fr_1fr] gap-3 px-4 md:px-6 flex-1">
+
+  <!-- Left — big gradient hero card -->
+  <div class="relative rounded-2xl overflow-hidden bg-gradient-to-br from-brand-rose via-brand-pink to-pink-400 flex flex-col justify-end p-8 min-h-[300px] md:min-h-0">
+    <!-- Soft light blobs -->
+    <div class="absolute top-10 left-10 w-48 h-48 bg-white/20 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 right-0 w-64 h-64 bg-pink-300/30 rounded-full blur-3xl"></div>
+
+    <div class="relative z-10">
+      <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6 drop-shadow-sm">
+        Lorem ipsum dolor sit amet,<br class="hidden md:block" />
+        consectetur adipiscing.
+      </h1>
+      <a
+        href="#"
+        class="inline-flex items-center gap-2 bg-brand-purple text-white text-sm font-semibold px-6 py-3 rounded-full hover:bg-purple-800 transition-all hover:gap-3 group"
+      >
+        Explore Work
+        <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Right column — two stacked cards -->
+  <div class="flex flex-col gap-3">
+
+    <!-- About Us card -->
+    <div class="bg-brand-light rounded-2xl p-6 flex flex-col gap-3 flex-1 group hover:shadow-md transition-shadow cursor-pointer">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <!-- People icon -->
+          <div class="w-10 h-10 rounded-xl bg-white flex items-center justify-center shadow-sm">
+            <svg class="w-5 h-5 text-brand-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+                d="M17 20h5v-2a4 4 0 00-4-4h-1M9 20H4v-2a4 4 0 014-4h1m4 6v-2m0 0a4 4 0 10-4-4 4 4 0 004 4z"/>
+            </svg>
+          </div>
+          <h2 class="font-semibold text-gray-800 text-base">About Us</h2>
+        </div>
+        <div class="w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-sm group-hover:bg-brand-purple group-hover:text-white transition-colors">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </div>
+      <p class="text-gray-500 text-sm leading-relaxed">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus metus ac ipsum volutpat sollicitudin.
+      </p>
+    </div>
+
+    <!-- Capabilities card -->
+    <div class="bg-brand-light rounded-2xl p-6 flex flex-col gap-4 flex-1 hover:shadow-md transition-shadow">
+      <div class="flex items-center justify-between">
+        <h2 class="font-semibold text-gray-800 text-base">Capabilities</h2>
+        <span class="text-brand-purple font-mono text-sm font-medium">&lt;/&gt;</span>
+      </div>
+
+      <ul class="flex flex-col gap-3">
+        {[
+          { num: '01', label: 'Custom Website' },
+          { num: '02', label: 'Web Apps' },
+          { num: '03', label: 'Business Dashboard' },
+        ].map(({ num, label }) => (
+          <li class="flex items-center gap-3 group cursor-pointer">
+            <span class="text-xs font-bold text-brand-crimson">{num}</span>
+            <span class="text-sm text-gray-700 font-medium group-hover:text-brand-purple transition-colors">{label}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+
+  </div>
+</section>
