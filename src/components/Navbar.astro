@@ -12,12 +12,12 @@ import { Menu } from 'lucide-astro';
     <!-- Nav links -->
     <ul class="hidden lg:flex items-center gap-8 text-[18px] font-medium text-brand-text">
       <li>
-        <a href="#" class="text-[#b7175a] border-b-2 border-[#b7175a] pb-1">Home</a>
+        <a href="/" class="hover:text-brand-crimson transition-colors">Home</a>
       </li>
-      <li><a href="#" class="hover:text-brand-crimson transition-colors">Services</a></li>
-      <li><a href="#" class="hover:text-brand-crimson transition-colors">About</a></li>
-      <li><a href="#" class="hover:text-brand-crimson transition-colors">Reviews</a></li>
-      <li><a href="#" class="hover:text-brand-crimson transition-colors">Contact</a></li>
+      <li><a href="/services" class="hover:text-brand-crimson transition-colors">Services</a></li>
+      <li><a href="#about" class="hover:text-brand-crimson transition-colors">About</a></li>
+      <li><a href="#reviews" class="hover:text-brand-crimson transition-colors">Reviews</a></li>
+      <li><a href="#contact" class="hover:text-brand-crimson transition-colors">Contact</a></li>
     </ul>
 
     <!-- CTA -->
@@ -40,11 +40,11 @@ import { Menu } from 'lucide-astro';
 
   <!-- Mobile menu -->
   <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 px-6 py-6 flex flex-col gap-5 text-lg font-medium text-brand-text">
-    <a href="#" class="text-brand-crimson font-semibold">Home</a>
-    <a href="#">Services</a>
-    <a href="#">About</a>
-    <a href="#">Reviews</a>
-    <a href="#">Contact</a>
+    <a href="/" class="text-brand-crimson font-semibold">Home</a>
+    <a href="/services">Services</a>
+    <a href="#about">About</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
     <a href="#" class="mt-2 inline-flex justify-center bg-gradient-to-r from-[#bd185d] to-[#7e22ce] text-white font-bold px-5 py-3 rounded-full">
       Start a Project
     </a>
