@@ -1,0 +1,11 @@
+# Ignore the massive dependency folders
+node_modules/
+.git/
+
+# Ignore build outputs (Astro-specific)
+dist/
+.astro/
+
+# Ignore environment secrets
+.env
+.env.*

@@ -1,0 +1,46 @@
+---
+/**
+ * WhoWeServe — Target audience section.
+ * Left side: heading + paragraph.  Right side: 3 audience cards.
+ * Matches Figma node 249:160 (Group 73).
+ */
+import { Store } from 'lucide-astro';
+---
+
+<section class="px-6 md:px-10 py-8 md:py-10 lg:py-12">
+  <div class="bg-brand-light rounded-2xl p-8 md:p-10 lg:p-12 flex flex-col lg:flex-row gap-8 lg:gap-12">
+
+    <!-- Left — Text -->
+    <div class="flex flex-col gap-4 lg:max-w-[600px] lg:shrink-0">
+      <h2 class="text-3xl md:text-4xl lg:text-[48px] font-extrabold text-[#131B2E] leading-tight">
+        Who We Serve
+      </h2>
+      <p class="text-base md:text-lg lg:text-[24px] font-medium text-brand-text leading-relaxed">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam diam nisl,
+        vestibulum vel enim lobortis, tristique eleifend magna.
+      </p>
+    </div>
+
+    <!-- Right — Audience cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 flex-1">
+
+      {[1, 2, 3].map(() => (
+        <div class="bg-white rounded-2xl p-6 md:p-7 flex flex-col items-center text-center gap-4 hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+          <!-- Icon -->
+          <div class="w-[35px] h-[35px] flex items-center justify-center text-brand-text">
+            <Store class="w-[30px] h-[30px]" />
+          </div>
+
+          <!-- Label -->
+          <span class="text-xl md:text-[24px] font-semibold text-black">SME</span>
+
+          <!-- Description -->
+          <p class="text-base md:text-lg lg:text-[24px] font-medium text-brand-text leading-relaxed">
+            Agile growth Partners.
+          </p>
+        </div>
+      ))}
+
+    </div>
+  </div>
+</section>
