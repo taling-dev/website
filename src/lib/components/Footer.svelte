@@ -1,0 +1,22 @@
+<footer class="w-full bg-white shadow-[0px_0px_18px_-1px_rgba(0,0,0,0.08)]">
+  <div class="max-w-[1728px] mx-auto px-6 md:px-12 lg:px-24 py-10 md:py-14 flex flex-col gap-6 md:gap-0 md:flex-row md:items-end md:justify-between">
+
+    <!-- Left — Brand -->
+    <div class="flex flex-col gap-1">
+      <a href="/" class="flex items-center gap-2">
+        <img src="/logo.svg" alt="Taling logo" class="h-6 w-auto" />
+      </a>
+      <span class="text-[18px] font-bold text-black">Taling Dev</span>
+      <span class="text-[16px] font-medium text-black/40">© 2026 Taling Dev</span>
+    </div>
+
+    <!-- Right — Links -->
+    <nav class="flex flex-wrap items-center gap-4 md:gap-6 text-[16px] font-medium text-black/40">
+      <a href="/privacy" class="hover:text-brand-crimson transition-colors">Privacy Policy</a>
+      <a href="/terms" class="hover:text-brand-crimson transition-colors">Terms of Service</a>
+      <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="hover:text-brand-crimson transition-colors">GitHub</a>
+      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="hover:text-brand-crimson transition-colors">Instagram</a>
+    </nav>
+
+  </div>
+</footer>

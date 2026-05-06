@@ -1,0 +1,57 @@
+<script lang="ts">
+  import { Star, SendHorizontal, ArrowUpRight } from 'lucide-svelte';
+</script>
+
+<section class="grid grid-cols-1 md:grid-cols-2 gap-3 px-6 md:px-12 lg:px-24 pt-1.5 pb-12 md:pb-16 lg:pb-20">
+
+  <!-- Left — Testimonial card -->
+  <div class="relative bg-brand-light rounded-2xl p-6 md:p-8 overflow-hidden flex flex-col gap-3 md:gap-4 hover:shadow-md transition-shadow min-h-[280px] md:min-h-0">
+    <!-- Star rating -->
+    <div class="flex items-center gap-1">
+      {#each Array(5) as _}
+        <Star class="w-4 h-4 md:w-5 md:h-5 text-brand-crimson fill-brand-crimson" />
+      {/each}
+    </div>
+
+    <h3 class="font-extrabold text-gray-900 text-xl lg:text-2xl">What our clients say</h3>
+
+    <blockquote class="border-l-2 border-gray-300 pl-3 md:pl-4 my-1 md:my-2">
+      <p class="text-brand-text text-base lg:text-lg font-medium leading-relaxed">
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus metus ac ipsum volutpat sollicitudin. Maecenas a leo euismod, egestas nunc at, porta odio."
+      </p>
+    </blockquote>
+
+    <p class="text-[12px] md:text-sm font-bold text-brand-text tracking-wide uppercase">ANDI, CEO KOGU SPACE</p>
+
+    <!-- Large watermark number -->
+    <div class="absolute -bottom-1 right-4 md:right-8 text-6xl md:text-7xl font-extrabold text-white/50 select-none pointer-events-none leading-none">
+      4.8
+    </div>
+  </div>
+
+  <!-- Right — CTA card -->
+  <div class="relative bg-brand-crimson rounded-2xl p-6 md:p-8 flex flex-col items-center justify-center gap-3 md:gap-4 text-center overflow-hidden hover:brightness-105 transition-all cursor-pointer group min-h-[280px] md:min-h-0">
+
+    <!-- Send icon -->
+    <div class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/20 flex items-center justify-center mb-1 md:mb-2">
+      <SendHorizontal class="w-6 h-6 md:w-7 md:h-7 text-white" />
+    </div>
+
+    <div class="relative z-10">
+      <h3 class="text-xl md:text-2xl lg:text-3xl font-extrabold text-white mb-1 md:mb-2 leading-tight">Digitalize your business now!</h3>
+      <p class="text-white text-base lg:text-lg font-medium mb-4 md:mb-6 opacity-90">Let's build something great together.</p>
+
+      <div class="inline-flex flex-col items-center">
+        <a
+          href="/contact"
+          class="inline-flex items-center gap-2 text-white text-base md:text-lg font-extrabold tracking-[1.2px] hover:scale-105 transition-transform"
+        >
+          GET IN TOUCH
+          <ArrowUpRight class="w-4 h-4 md:w-5 md:h-5" strokeWidth={2.5} />
+        </a>
+        <div class="h-0.5 w-full bg-white mt-1 opacity-60"></div>
+      </div>
+    </div>
+  </div>
+
+</section>

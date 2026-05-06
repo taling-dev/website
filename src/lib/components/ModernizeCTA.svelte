@@ -1,0 +1,27 @@
+<script lang="ts">
+  import { ArrowRight } from 'lucide-svelte';
+</script>
+
+<section class="px-6 md:px-12 lg:px-24 py-12 md:py-16 lg:py-20">
+  <div
+    class="rounded-[20px] px-8 md:px-12 lg:px-16 py-10 md:py-12 lg:py-16 flex flex-col md:flex-row items-start md:items-center justify-between gap-8 md:gap-12 max-w-[1728px] mx-auto"
+    style="background: linear-gradient(94.5deg, #FFFFFF 1.23%, #F7EDFF 50.31%, #F0DBFF 99.39%);"
+  >
+    <div class="flex flex-col gap-4 max-w-3xl">
+      <h2 class="text-3xl lg:text-4xl font-extrabold text-[#131B2E] leading-tight">
+        Ready to modernize your business?
+      </h2>
+      <p class="text-base md:text-lg lg:text-xl font-medium text-brand-text leading-relaxed">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus metus ac ipsum volutpat sollicitudin.
+      </p>
+    </div>
+
+    <a
+      href="/contact"
+      class="inline-flex items-center gap-3 bg-gradient-to-r from-[#bd185d] to-[#7e22ce] text-white text-base md:text-lg font-extrabold tracking-[0.02em] px-6 py-3 rounded-full hover:brightness-110 hover:scale-[1.03] transition-all duration-200 whitespace-nowrap group shadow-lg shadow-brand-purple/20"
+    >
+      Start a Project
+      <ArrowRight class="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+    </a>
+  </div>
+</section>

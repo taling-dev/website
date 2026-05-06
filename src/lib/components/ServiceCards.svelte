@@ -1,0 +1,54 @@
+<script lang="ts">
+  import { Globe, LayoutGrid, Monitor } from 'lucide-svelte';
+</script>
+
+<section class="px-6 md:px-12 lg:px-24 pb-12 md:pb-16 lg:pb-20">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
+
+    <!-- Card 1 — Logo, Graphic Design, & Web Design -->
+    <div class="relative bg-white rounded-2xl p-6 lg:p-7 flex flex-col gap-4 shadow-[0px_0px_18px_-1px_rgba(0,0,0,0.08)] hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
+      <div class="w-[48px] h-[45px] rounded-[10px] bg-brand-light flex items-center justify-center">
+        <Globe class="w-[24px] h-[24px] text-brand-crimson" />
+      </div>
+      <span class="text-[16px] font-semibold text-brand-crimson">01</span>
+      <h3 class="text-xl lg:text-2xl font-extrabold text-black leading-snug">
+        Logo, Graphic Design, &amp; Web Design
+      </h3>
+      <p class="text-base md:text-lg font-medium text-brand-text leading-relaxed">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus
+        metus ac ipsum volutpat sollicitudin.
+      </p>
+    </div>
+
+    <!-- Card 2 — Custom Websites & Web Apps (DARK) -->
+    <div class="relative bg-[#0F172A] rounded-2xl p-6 lg:p-7 flex flex-col gap-4 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
+      <div class="w-[48px] h-[45px] rounded-[10px] bg-[#283044] flex items-center justify-center">
+        <LayoutGrid class="w-[20px] h-[20px] text-brand-crimson" />
+      </div>
+      <span class="text-[16px] font-semibold text-[#B08BCF]">02</span>
+      <h3 class="text-xl lg:text-2xl font-extrabold text-white leading-snug">
+        Custom Websites &amp; Web Apps
+      </h3>
+      <p class="text-base md:text-lg font-medium text-[#D0D2D5] leading-relaxed">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus
+        metus ac ipsum volutpat sollicitudin.
+      </p>
+    </div>
+
+    <!-- Card 3 — Custom Business Dashboards -->
+    <div class="relative bg-white rounded-2xl p-6 lg:p-7 flex flex-col gap-4 shadow-[0px_0px_18px_-1px_rgba(0,0,0,0.08)] hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group md:col-span-2 lg:col-span-1">
+      <div class="w-[48px] h-[45px] rounded-[10px] bg-brand-light flex items-center justify-center">
+        <Monitor class="w-[24px] h-[24px] text-brand-crimson" />
+      </div>
+      <span class="text-[16px] font-semibold text-brand-crimson">03</span>
+      <h3 class="text-xl lg:text-2xl font-extrabold text-black leading-snug">
+        Custom Business Dashboards
+      </h3>
+      <p class="text-base md:text-lg font-medium text-brand-text leading-relaxed">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus
+        metus ac ipsum volutpat sollicitudin.
+      </p>
+    </div>
+
+  </div>
+</section>

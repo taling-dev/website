@@ -1,0 +1,35 @@
+<script lang="ts">
+  import { Store } from 'lucide-svelte';
+</script>
+
+<section class="px-6 md:px-12 lg:px-24 pb-12 md:pb-16 lg:pb-20">
+  <div class="bg-brand-light rounded-2xl p-7 md:p-10 lg:p-12 flex flex-col lg:flex-row gap-8 lg:gap-12">
+
+    <!-- Left — Text -->
+    <div class="flex flex-col gap-4 lg:max-w-[480px] lg:shrink-0">
+      <h2 class="text-3xl lg:text-4xl font-extrabold text-[#131B2E] leading-tight">
+        Who We Serve
+      </h2>
+      <p class="text-base md:text-lg lg:text-xl font-medium text-brand-text leading-relaxed">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam diam nisl,
+        vestibulum vel enim lobortis, tristique eleifend magna.
+      </p>
+    </div>
+
+    <!-- Right — Audience cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 flex-1">
+      {#each [1, 2, 3] as _}
+        <div class="bg-white rounded-2xl p-5 md:p-6 flex flex-col items-center text-center gap-3 hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+          <div class="w-[30px] h-[30px] flex items-center justify-center text-brand-text">
+            <Store class="w-[24px] h-[24px]" />
+          </div>
+          <span class="text-xl lg:text-2xl font-extrabold text-black">SME</span>
+          <p class="text-base md:text-lg font-medium text-brand-text leading-relaxed">
+            Agile growth Partners.
+          </p>
+        </div>
+      {/each}
+    </div>
+
+  </div>
+</section>
